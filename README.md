@@ -5,5 +5,6 @@ An unfinished Git client. It was used collect code samples on a system that didn
 # Demo
 
 ```
-github.com\as\git\ex\2>2.exe -s tcp!github.com!22 -k %publickeypath% -kp %publickeypassword%
+cd github.com\as\git\ex\2
+2.exe -s tcp!github.com!22 -k %publickeypath% -kp %publickeypassword%
 ```
