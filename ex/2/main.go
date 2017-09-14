@@ -80,7 +80,6 @@ func main() {
 	*/
 
 	Git := clientinit()
-	//c, err := Git.Command("git-upload-pack", "garethjensen/goconquer")
 	c, err := Git.Command("git-upload-pack", "as/structslice")
 	pl, err := c.UploadPackTX()
 	no(err)
@@ -105,7 +104,6 @@ func main() {
 		}
 	}
 
-	//t, err := git.TreeFromFile("../data/.git/objects/76/20e8bce130075206e51cdfb70a8b915731e3dd")
 	t, err := git.TreeFromFile("testdata/.git/objects/db/af7f6df43c70f1452755f3ce9a4d86e3c14e6f") //as/structslice
 	no(err)
 	fmt.Println(t)
